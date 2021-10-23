@@ -14,7 +14,7 @@ app.use(cors())
 const serverHttp = http.createServer(app)
 const io = new Server(serverHttp, {
   cors: {
-    origin: "*"
+    origin: "*" 
   }
 })
 
@@ -36,6 +36,7 @@ app.get('/signin/callback', (request, response) => {
   return response.json(code)
 })
 
-app.listen(4100,
-  () => console.log('🚀 Server is running on PORT 4100!')
-)
+export {
+  serverHttp,
+  io
+}
