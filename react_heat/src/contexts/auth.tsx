@@ -1,3 +1,4 @@
+
 import {
   createContext,
   ReactNode,
@@ -43,7 +44,8 @@ export function AuthProvider(props: AuthProvider) {
     setUser
   ] = useState<User | null>(null)
 
-  const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=7a0bdd4ca347b9b9f752`
+  const client_id = '7a0bdd4ca347b9b9f752'
+  const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=${client_id}`
 
   async function signIn(githubCode: string) {
     const response = await api.post<AuthReponse>('authenticate', {
