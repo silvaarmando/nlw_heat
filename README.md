@@ -1,4 +1,5 @@
-#
+<br
+/>
 
 <h3
   align="center"
@@ -25,7 +26,7 @@
   align="center"
 >
   <img
-    width="480em"
+    width="780em"
     alt="Capa da Aplicação de mensagens para o DO WHILE"
     src="./readme_screens/capa_do_while.png"
   />
