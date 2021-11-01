@@ -26,7 +26,7 @@
   align="center"
 >
   <img
-    width="780em"
+    width="680em"
     alt="Capa da Aplicação de mensagens para o DO WHILE"
     src="./readme_screens/capa_do_while.png"
   />
